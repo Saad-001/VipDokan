@@ -1,12 +1,7 @@
-.header-section{
-
-}
 
 body{
     font-family: 'Karla', sans-serif;
     color: #47503A;
-    /* background-color: #F3F2EE; */
-
 }
 
 .header-font{
@@ -32,7 +27,12 @@ body{
 }
 
 .perfume-btn{
-    padding-left: 28px;
+    padding-left: 25px;
+    background: #47503A;
+}
+
+.main-section{
+    background: #F3F2EE;
 }
 
 .card img{
@@ -42,7 +42,7 @@ body{
 
 .details-btn{
     border: 0.5px;
-    background-color: #F3F2EE;
+    background: #FFFFFF;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
