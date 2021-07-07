@@ -16,6 +16,10 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- owl carousel css links -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
     <!-- font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +28,12 @@
 </head>
 
 <body>
-    <nav class="md:bg-gray-100 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <div class="flex lg:w-2/5 flex-wrap items-center text-lg md:ml-auto">
-                <a href="index.html" class="mr-5 hover:text-gray-900">Shop</a>
-                <a href="index.html" class="mr-5 hover:text-gray-900">About</a>
+    <!-- navbar starts -->
+    <nav class="md:bg-gray-100 body-font" id="navbar">
+        <div class="container mx-auto md:px-14 flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <div class="flex lg:w-2/5 flex-wrap items-center text-lg font-semibold md:ml-auto">
+                <a href="index.html" class="mr-5">Shop</a>
+                <a href="index.html" class="mr-5">About</a>
             </div>
             <a href="index.html"
                 class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
@@ -36,128 +41,524 @@
             </a>
             <div class="lg:w-2/5 flex lg:justify-end lg:ml-0 space-x-2 md:space-x-4">
                 <button
-                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-lg mt-4 md:mt-0">Login</button>
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded font-semibold text-lg mt-4 md:mt-0">Login</button>
+                <a href="#" class="mt-5 md:mt-1 text-lg"><i class="fas fa-heart"></i></a>
                 <a href="" class="mt-4 md:mt-0 flex items-center"><i class="fas fa-shopping-cart"></i> (0)</a>
             </div>
         </div>
     </nav>
+    <!-- navbar ends -->
 
-    <header class="header-section mt-5 md:mt-0">
-        <div class="overlaw relative">
-            <div
-                class="w-max mx-auto md:absolute mb-4 md:mb-0 top-8 inset-x-0 flex justify-center shadow-xl rounded-md">
-                <a href="" class="py-2 px-5 bg-gray-100 rounded-l-md">Mushroom</a>
-                <a href="" class="py-2 px-6 perfume-btn text-white rounded-r-md">Perfumes</a>
+    <!-- header section starts -->
+    <header class="">
+        <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center justify-between">
+            <div class="lg:flex md:w-1/2 md:pl-10 flex flex-col mb-16 md:mb-0">
+                <h1 class="title-font mb-6 text-5xl header-font font-bold">Find Mushrooms
+                    <br class="lg:inline-block">& Perfumes you'll love
+                </h1>
+                <div class="flex">
+                    <button
+                        class="inline-flex hover-effect border-0 bg-gray-200 py-2 px-6 focus:outline-none rounded-sm text-lg header-font">Mushrooms</button>
+                    <button
+                        class="ml-4 inline-flex hover-effect btn-background border-0 py-2 px-7 focus:outline-none rounded-sm text-white header-font text-lg">Perfumes</button>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="mushroom-div"></div>
-                <div class="perfume-div"></div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mx-auto">
+                <img class="rounded header-image" alt="hero" src="./images/header-banner.png">
             </div>
         </div>
     </header>
+    <!-- header section ends -->
 
-    <main class="py-10 px-10 main-section">
+    <!-- main section starts -->
+    <main class="py-10 px-10 background-color">
         <div class="mt-10">
-            <div class="flex justify-between lg:mx-4">
-                <h1 class="text-4xl font-bold header-font">Best Sellers</h1>
-                <h4 class="text-xl font-bold border-b-2 border-gray-600">Shop all</h4>
+            <div class="flex justify-between long-border pb-2 mx-4">
+                <h1 class="text-4xl inline font-bold header-font">Best Sellers</h1>
+                <!-- <h4 class="text-xl font-bold border-b-2 border-gray-600">Shop all</h4> -->
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:gap-4">
-                <div class="card px-3 mt-16">
-                    <img src="/images/productImages/image 1.png" class="rounded-md w-full" alt="">
-                    <div class="flex justify-between mt-4">
-                        <div>
-                            <p class="text-md font-semibold">Moiss Dier</p>
-                            <p class="text-sm italic text-gray-600">Limited stock</p>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_1.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
                         </div>
-                        <div class="">
-                            <div class="flex justify-end">
-                                <p class="text-sm font-semibold">500 BDT</p>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Moiss Dier</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
                             </div>
-                            <div class="text-gray-300 text-xs">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="details-btn py-2 text-sm font-semibold block mt-4 text-center text-gray-700 rounded-md px-4">SEE DETAILS</a>
                 </div>
 
-                <div class="card px-3 mt-16">
-                    <img src="/images/productImages/image 2.png" class="rounded-md w-full" alt="">
-                    <div class="flex justify-between mt-4">
-                        <div>
-                            <p class="text-md font-semibold">Reishi Mushroom</p>
-                            <p class="text-sm italic text-gray-600">Limited stock</p>
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_2.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold hidden text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
                         </div>
-                        <div class="">
-                            <div class="flex justify-end">
-                                <p class="text-sm font-semibold">500 BDT</p>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Reishi Mushroom</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
                             </div>
-                            <div class="text-gray-300 text-xs">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="details-btn py-2 text-sm font-semibold block mt-4 text-center text-gray-700 rounded-md px-4">SEE DETAILS</a>
                 </div>
 
-                <div class="card px-3 mt-16">
-                    <img src="/images/productImages/image 3.png" class="rounded-md w-full" alt="">
-                    <div class="flex justify-between mt-4">
-                        <div>
-                            <p class="text-md font-semibold">Fawaki Premium</p>
-                            <p class="text-sm italic text-gray-600">Limited stock</p>
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_3.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold hidden text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
                         </div>
-                        <div class="">
-                            <div class="flex justify-end">
-                                <p class="text-sm font-semibold">500 BDT</p>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Premium Fawaki</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
                             </div>
-                            <div class="text-gray-300 text-xs">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="details-btn py-2 text-sm font-semibold block mt-4 text-center text-gray-700 rounded-md px-4">SEE DETAILS</a>
                 </div>
 
-                <div class="card px-3 mt-16">
-                    <img src="/images/productImages/image 4.png" class="rounded-md w-full" alt="">
-                    <div class="flex justify-between mt-4">
-                        <div>
-                            <p class="text-md font-semibold">Brown Mushroom</p>
-                            <p class="text-sm italic text-gray-600">Limited stock</p>
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_4.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold hidden text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
                         </div>
-                        <div class="">
-                            <div class="flex justify-end">
-                                <p class="text-sm font-semibold">500 BDT</p>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Brown Mushroom</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
                             </div>
-                            <div class="text-gray-300 text-xs">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="details-btn py-2 text-sm font-semibold block mt-4 text-center text-gray-700 rounded-md px-4">SEE DETAILS</a>
                 </div>
+
+                <!-- repeating cards starts-->
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_4.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold hidden text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
+                        </div>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Brown Mushroom</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card relative px-3 mt-16">
+                        <img src="/images/productImages/img_4.png" class="rounded-sm w-full" alt="">
+                        <div class="flex justify-center">
+                            <a href=""
+                                class="details-btn py-2 px-24 text-sm font-semibold hidden text-center text-gray-700 rounded-sm">SEE
+                                DETAILS</a>
+                        </div>
+                        <div class="bg-white p-3 rounded-sm">
+                            <div class="">
+                                <p class="text-md font-semibold">Brown Mushroom</p>
+                                <p class="text-sm italic text-gray-600">Limited stock</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">500 BDT</p>
+                                    <p class="text-sm font-semibold"><s>600 BDT</s></p>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="text-gray-300 text-xs">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- repeating cards end -->
             </div>
         </div>
     </main>
+    <!-- main section ends -->
 
+    <!-- discover section starts -->
+    <section class="p-14 pt-8 background-color">
+        <div class="discover-container long-border pb-2">
+            <h1 class="text-4xl header-font font-bold">Discover Unique Items</h1>
+        </div>
+
+        <div id="tabs" class="py-1 px-1 mt-10 rounded inline-flex bg-white">
+            <a href="#first" id="default-tab" class="py-1 px-10 rounded btn-background text-white font-semibold">Mushroom</a>
+            <a href="#second" class="py-1 px-10 rounded bg-white font-semibold">Perfumes</a>
+        </div>
+
+        <div id="tab-contents">
+            <div id="first" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-7">
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_1.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_2.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Swiss brown</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_3.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Reishi</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_4.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">King oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_4.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">King oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_3.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Reishi</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_2.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Swiss brown</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_1.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Oyster</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- second id contents -->
+            <div id="second" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-7">
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_5.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_6.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Swiss brown</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_7.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Reishi</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_8.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">King oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_8.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">King oyster</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_7.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Reishi</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_6.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Swiss brown</h1>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="shadow">
+                    <a href="">
+                        <img src="./images/productImages/image_5.png" class="w-full rounded-t" alt="">
+                        <div class="text-center py-3 bg-white rounded-b">
+                            <h1 class="text-3xl font-bold">Oyster</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- discover section ends -->
+
+    <!-- feature section starts -->
+    <section class="feature-container">
+        <div class="overlay relative">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="feature-img-1 flex items-end justify-center pb-8">
+                    <button class="discover-btn-1 py-2 px-20">DISCOVER ROSE</button>
+                </div>
+                <div class="feature-img-2 flex items-end justify-center pb-8">
+                    <button class="discover-btn-2 py-2 px-14">DISCOVER MUSHROOMS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature section end -->
+
+    <!-- social links section starts -->
+    <section class="p-16 btn-background">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-white header-font">Stay Involved</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+            <div class="bg-white p-4 text-center rounded-sm font-semibold">
+                <a href="">Join Facebook Group</a>
+            </div>
+
+            <div class="bg-white p-4 text-center rounded-sm font-semibold">
+                <a href="">@Vipdokan on Instagram</a>
+            </div>
+
+            <div class="bg-white p-4 text-center rounded-sm font-semibold">
+                <a href="">@vipdokan on Twitter</a>
+            </div>
+
+            <div class="bg-white p-4 text-center rounded-sm font-semibold">
+                <a href="">Subscribe our channel</a>
+            </div>
+        </div>
+    </section>
+    <!-- social links section ends -->
+
+    <section class="bg-white text-center p-5">
+        <a href="#navbar" class="text-2xl font-bold">Back to top</a>
+    </section>
+
+    <!-- footer section starts -->
+    <section class="background-color pt-14 md:px-24 px-14 pb-4">
+        <div class="lg:flex grid grid-cols-1 md:grid-cols-2">
+            <div class="flex-1">
+                <p class="mb-10 font-semibold">Online Shopping</p>
+                <div class="flex flex-col text-sm space-y-2 font-semibold">
+                    <a href="">Mushrooms</a>
+                    <a href="">Perfumes</a>
+                    <a href="">Honey</a>
+                    <a href="">Black Seed</a>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 md:mt-0">Useful Links</p>
+                <div class="flex flex-col text-sm space-y-2 font-semibold">
+                    <a href="">Contact Us</a>
+                    <a href="">FAQ</a>
+                    <a href="">T&C</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Track Orders</a>
+                    <a href="">Shipping</a>
+                    <a href="">Returns</a>
+                    <a href="">Black Seed</a>
+                    <a href="">Blog</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Sitemap</a>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 md:mt-0">Payment Gateway</p>
+                <div class="flex">
+                    <a href=""><img src="./images/paymentGatewayImages/image 19.png" alt=""></a>
+                    <a href=""><img src="./images/paymentGatewayImages/image 20.png" alt=""></a>
+                    <a href=""><img src="./images/paymentGatewayImages/image 21.png" alt=""></a>
+                </div>
+                <div class="flex">
+                    <a href=""><img src="./images/paymentGatewayImages/image 11.png" alt=""></a>
+                    <a href=""><img src="./images/paymentGatewayImages/image 17.png" alt=""></a>
+                    <a href=""><img src="./images/paymentGatewayImages/image 18.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 lg:mt-0">Subscribe</p>
+
+                <p class="mb-5 text-sm font-semibold">Our product recommendation you'll love to receive.
+                    <br>
+                    No spam, Unsubscribe anytime.
+                </p>
+                <div class="py-1 px-1 pl-3 flex inline-flex bg-white rounded">
+                    <input type="text" class="border-none md:w-52 mr-2 focus:outline-none" placeholder="Your email address">
+                    <a href="" class="btn-background rounded-sm py-1 px-2 text-white">Subscribe</a>
+                </div>
+                <div class="flex space-x-3 mt-5">
+                    <img src="/images/vector/Vector.png" alt="">
+                    <p>100% ORIGINAL guarantee for all products at vipdokan.com</p>
+                </div>
+                <div class="mt-5 flex space-x-5">
+                    <img src="./images/vector/Vector (1).png" alt="">
+                    <p>Return within 30days of receiving your order</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10">
+            <p class="text-sm font-semibold">© 2021 vipdokan.com. All rights reserved.</p>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- owl carousel related important links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

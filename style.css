@@ -1,7 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Karla', sans-serif;
     color: #47503A;
+}
+
+.header-image{
+    height: 550px;
 }
 
 .header-font{
@@ -26,13 +33,17 @@ body{
     background-size: cover;
 }
 
-.perfume-btn{
-    padding-left: 25px;
+.btn-background{
+    /* padding-left: 25px; */
     background: #47503A;
 }
 
-.main-section{
+.background-color{
     background: #F3F2EE;
+}
+
+.long-border{
+    border-bottom: 2px solid #47503A;
 }
 
 .card img{
@@ -40,7 +51,15 @@ body{
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card:hover .details-btn{
+    position: absolute;
+    top: 235px;
+    display: block;
+}
+
+
 .details-btn{
+    display: none;
     border: 0.5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
@@ -50,12 +69,82 @@ body{
     box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.1); 
 }
 
+.hover-effect:hover{
+    box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.owl-nav{
+    position: absolute;
+    top: -65px;
+    right: 8px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-prev, .owl-next{
+    width: 35px;
+}
+
+.owl-dots{
+    margin-top: 35px;
+}
+
+.feature-container{
+    background: #F3F2EE;
+}
+
+.feature-img-1{
+    background-image: url('./images/featureImages/feature-img-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 515px;
+}
+
+.feature-img-2{
+    background-image: url('./images/featureImages/feature-img-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 515px;
+}
+
+.discover-btn-1{
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 0.5px;
+    color: #47503A;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.discover-btn-2{
+    background: #FFFFFF;
+    border: 0.5px;
+    color: #47503A;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
 
 
-
-
-/* @media screen and (min-width: 480px){
-    .mushroom-div, .perfume-div{
-        height: 400px;
+@media screen and (max-width: 640px){
+    .card:hover .details-btn{
+        top: 350px;
     }
-} */
+}
+
+@media screen and (max-width: 500px){
+    .card:hover .details-btn{
+        top: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .card:hover .details-btn{
+        top: 280px;
+    }
+}
