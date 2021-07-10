@@ -23,9 +23,14 @@ $('.owl-carousel').owlCarousel({
         },
         1280:{
             items:4
+        },
+        1536:{
+            items:5
         }
+
     }
 })
+
 
 let tabsContainer = document.querySelector("#tabs");
 

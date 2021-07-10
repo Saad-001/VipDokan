@@ -15,24 +15,6 @@ body{
     font-family: 'Spectral', serif;
 }
 
-.mushroom-div{
-    height: 500px;
-    width: 100%;
-    background-image: url('/images/header-mushroom-resize.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.perfume-div{
-    height: 500px;
-    width: 100%;
-    background-image: url('/images/header-attar.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .btn-background{
     /* padding-left: 25px; */
     background: #47503A;
@@ -46,9 +28,21 @@ body{
     border-bottom: 2px solid #47503A;
 }
 
+.card{
+  transition: all 0.4s ease;
+     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
 .card img{
     border: 0.3px;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+.card:hover{
+    box-shadow: 1px 3px 15px 0px rgb(0 0 0 / 25%);
+    -webkit-box-shadow:  1px 3px 15px 0px rgb(0 0 0 / 25%);
 }
 
 .card:hover .details-btn{
@@ -62,11 +56,17 @@ body{
     display: none;
     border: 0.5px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .details-btn:hover{
     box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.hover-effect{
+    transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .hover-effect:hover{
@@ -80,6 +80,10 @@ body{
     font-size: 30px;
     align-items: center;
     justify-content: center;
+}
+
+.owl-stage-outer{
+    padding-bottom: 25px;
 }
 
 .owl-prev, .owl-next{

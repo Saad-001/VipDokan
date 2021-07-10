@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/4c6530eb2c.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind CSS CDN Link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="pruductDetails.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav class="md:bg-gray-100 body-font" id="navbar">
+        <div class="container mx-auto md:px-14 flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <div class="flex lg:w-2/5 flex-wrap items-center text-lg font-semibold md:ml-auto">
+                <a href="index.html" class="mr-5">Shop</a>
+                <a href="index.html" class="mr-5">About</a>
+            </div>
+            <a href="index.html"
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
+                <span class="ml-3 text-4xl font-bold header-font">VIPdokan</span>
+            </a>
+            <div class="lg:w-2/5 flex lg:justify-end lg:ml-0 space-x-2 md:space-x-4">
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded font-semibold text-lg mt-4 md:mt-0">Login</button>
+                <a href="#" class="mt-5 md:mt-1 text-lg"><i class="fas fa-heart"></i></a>
+                <a href="" class="mt-4 md:mt-0 flex items-center"><i class="fas fa-shopping-cart"></i> (0)</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <div class="px-10 py-10">
+        <p><a href="">Home</a> <i class="fas fa-chevron-right text-sm"></i> <a href="">Mushroom</a> <i class="fas fa-chevron-right text-sm"></i> <a href="" class="font-semibold">Reishi Mushroom</a></p>
+    </div>
+    
+    <!-- details section start -->
+    <section class="px-10 mb-10">
+        <div class="md:flex flex-wrap grid-cols-1 md:space-x-10">
+            <div id="tabs" class="md:flex flex-col grid grid-cols-3 object-cover gap-auto mb-5 md:mb-0 md:space-y-4">
+                <a href="#first" id="default-tab"><img class="w-24 rounded-sm" src="./images/productImages/img_5.png" alt="thumbnailImage"></a>
+                <a href="#second"><img class="w-24  rounded-md opacity-50" src="./images/productThumbnail/image_9.png" alt="thumbnailImage"></a>
+                <a href="#third"><img class="w-24  rounded-md opacity-50" src="./images/productThumbnail/image_10.png" alt="thumbnailImage"></a>
+            </div>
+            <div id="tab-contents" class="">
+                <img id="first" class="w-full rounded-md" src="./images/productImages/img_5.png" alt="productImage">
+                <img id="second" class="w-full rounded-md" src="./images/thumbnailsImage/image_9.png" alt="productImage">
+                <img id="third" class="w-full rounded-md" src="./images/thumbnailsImage/image_31.png" alt="productImage">
+            </div>
+            <div class="mx-auto md:mx-0">
+                <h2 class="text-4xl font-bold header-font mt-12">Reishi Mushroom</h2>
+                <h4 class="text-2xl font-semibold mt-4">Standard pack with 1kg</h4>
+                <div class="flex space-x-4 mt-4">
+                    <div class="inline border border-gray-300 py-1 px-2 rounded">
+                        <span class="text-sm font-semibold">4.5</span>
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="inline py-1 px-3 rounded btn-background">
+                        <span class="text-white text-sm">In stock</span>
+                    </div>
+                </div>
+                <div class="flex space-x-4 mt-4">
+                    <span class="text-3xl font-bold">BDT. 500</span>
+                    <del class="text-3xl">BDT. 1000</del>
+                </div>
+                <p class="mt-3 text-md">Including VAT</p>
+
+                <div class="md:flex grid-cols-1 space-y-10 md:space-y-0 md:space-x-10 mt-12">
+                    <div>
+                        <a href="" class="btn-background rounded p-1 pr-4 flex items-center md:space-x-4">
+                            <div class="bg-white py-1 flex items-center px-2 rounded-sm">
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </div>
+                            <p class="text-white mx-auto">Add to Cart</p>
+                        </a>
+                        <a href="" class="bg-gray-800 mt-3 rounded p-1 pr-4 flex items-center md:space-x-4">
+                            <div class="bg-white py-1 flex items-center px-2 rounded-sm">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <p class="text-white mx-auto md:pl-3">Buy Now</p>
+                        </a>
+                        <div class="flex items-center space-x-4 mt-8">
+                            <span class="text-xl font-bold">Share:</span>
+                            <a href=""><i class="fab fa-facebook-square text-xl"></i></a>
+                            <a href=""><i class="fab fa-twitter text-xl"></i></a>
+                            <a href=""><i class="fab fa-instagram-square text-xl"></i></a>
+                        </div>
+                        <a href="" class="background-color mt-8 shadow rounded p-1 pr-2 flex items-center md:space-x-6">
+                            <div class="btn-background p-1 flex items-center rounded-sm">
+                                <i class="fas fa-heart text-white text-md"></i>
+                            </div>
+                            <div class="mx-auto">
+                                <p class="font-semibold pl-2">Wishlist</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border border-gray-200 shadow px-4 py-3">
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-5">
+                                <i class="far fa-check-circle text-xl"></i>
+                                <span class="font-semibold">100% Original</span>
+                            </div>
+                            <div class="flex items-center space-x-5">
+                                <img class="" src="./images/vector/Vector (5).png" alt="">
+                                <span class="font-semibold">Secure transaction</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img class="" src="./images/vector/Vector (3).png" alt="">
+                                <span class="font-semibold">30 days returns</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img class="" src="./images/vector/Group.png" alt="">
+                                <span class="font-semibold">Cash on delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- details section end -->
+    <script src="productDetails.js"></script>
+</body>
+</html>
