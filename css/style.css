@@ -99,7 +99,7 @@ body{
 }
 
 .feature-img-1{
-    background-image: url('./images/featureImages/feature-img-1.png');
+    background-image: url('../img/feature-img-1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,7 @@ body{
 }
 
 .feature-img-2{
-    background-image: url('./images/featureImages/feature-img-2.png');
+    background-image: url('../img/feature-img-2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,6 +132,28 @@ body{
     font-size: 16px;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+}
+
+.productPageHeader{
+    height: 333px;
+    width: 100%;
+    background-image: url('../img/mushroomCover1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productPageHeader .overlay{
+    height: 333px;
+    width: 100%;
+    background-image: url('../img/mushroomCover2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cutout-corner{
+    background: linear-gradient(-50deg, transparent 45px, #fff 0);
 }
 
 
