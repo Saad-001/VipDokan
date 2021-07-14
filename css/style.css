@@ -168,6 +168,10 @@ body{
     border-color: #9D331B;
 }
 
+.need-help{
+    background-color: #f7f7f7;
+}
+
 @media screen and (max-width: 640px){
     .card:hover .details-btn{
         top: 350px;
