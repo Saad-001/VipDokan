@@ -24,6 +24,10 @@ body{
     background: #F3F2EE;
 }
 
+.second-background{
+    background-color: #9D331B;
+}
+
 .long-border{
     border-bottom: 2px solid #47503A;
 }
@@ -152,10 +156,17 @@ body{
     background-position: center;
 }
 
-.cutout-corner{
-    background: linear-gradient(-50deg, transparent 45px, #fff 0);
+.cutout-corner-two{
+    background: linear-gradient(-54deg, transparent 45px, #9D331B 0);
 }
 
+.cutout-corner-one{
+    background: linear-gradient(-54deg, transparent 45px, #fff 0);
+}
+
+.border-color{
+    border-color: #9D331B;
+}
 
 @media screen and (max-width: 640px){
     .card:hover .details-btn{
