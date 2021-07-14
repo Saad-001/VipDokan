@@ -59,7 +59,12 @@
                 <h2 class="text-2xl font-semibold">Regular Choice</h2>
             </div>
             <div class="flex items-center bg-white py-2 px-4 mt-6 md:mt-0 shadow rounded-sm">
-                <a href="" class="font-md font-semibold">Sort by:($) Low to hight <i class="fas fa-angle-down"></i></a>
+                <label class="font-md font-semibold" for="sortBy">Sort by :</label>
+                <select name="sortBy" id="sortBy" class="font-md font-semibold border-none focus:outline-none"><i class="fas fa-angle-down"></i>
+                    <option class="font-md font-semibold" value="($) Low to high">($) Low to high</option>
+                    <option class="font-md font-semibold" value="($) High to low">($) High to low</option>
+                    <option class="font-md font-semibold" value="($) Featured">($) Featured</option>
+                </select>
             </div>
         </div>
         <div class="md:ml-24 md:mr-24 py-10 mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
