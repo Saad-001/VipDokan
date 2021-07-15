@@ -138,7 +138,7 @@ body{
     border-radius: 3px;
 }
 
-.productPageHeader{
+.mushroomPageHeader{
     height: 333px;
     width: 100%;
     background-image: url('../img/mushroomCover1.png');
@@ -147,7 +147,7 @@ body{
     background-position: center;
 }
 
-.productPageHeader .overlay{
+.mushroomPageHeader .overlay{
     height: 333px;
     width: 100%;
     background-image: url('../img/mushroomCover2.png');
@@ -170,6 +170,24 @@ body{
 
 .need-help{
     background-color: #f7f7f7;
+}
+
+.perfumePageHeader{
+    height: 333px;
+    width: 100%;
+    background-image: url('../img/perfumesCover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.perfumePageHeader .overlay{
+    height: 333px;
+    width: 100%;
+}
+
+.text-color-second{
+    color: #9D331B;
 }
 
 @media screen and (max-width: 640px){
