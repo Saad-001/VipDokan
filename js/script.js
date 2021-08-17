@@ -2,7 +2,7 @@ const prevIcon = '<i class="fas fa-caret-left"></i>'
 const nextIcon = '<i class="fas fa-caret-right"></i>';
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
     nav: true,
     autoplay: false,

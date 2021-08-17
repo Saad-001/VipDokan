@@ -55,6 +55,10 @@ body{
     display: block;
 }
 
+.focus-effect:focus{
+    outline: none;
+    cursor: pointer;
+}
 
 .details-btn{
     display: none;
@@ -188,6 +192,52 @@ body{
 
 .text-color-second{
     color: #9D331B;
+}
+
+
+.input-border{
+    border: none;
+}
+.input-border:focus{
+    outline: none;
+}
+
+.checkout-Input{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.3px solid #333333;
+    background-color: #F4F8F8;
+}
+
+.checkout-Input:focus{
+    outline: none;
+}
+
+.horizontal-line{
+    margin-bottom: 14px;
+}
+
+.flex-even{
+    flex: 1;
+}
+
+.select-Items{
+    padding-bottom: 10px;
+}
+
+.select-Items option{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer-a-tag{
+    text-decoration: none !important;
+    color: black;
+}
+
+.extra-margin-top{
+    margin-top: 44px;
 }
 
 @media screen and (max-width: 640px){
