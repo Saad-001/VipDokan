@@ -15,6 +15,14 @@ body{
     font-family: 'Spectral', serif;
 }
 
+.font-spectral{
+    font-family: 'Spectral', serif;
+}
+
+.font-balooDa{
+    font-family: 'Baloo Da 2', cursive;
+}
+
 .btn-background{
     /* padding-left: 25px; */
     background: #47503A;
