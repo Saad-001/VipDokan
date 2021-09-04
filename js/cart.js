@@ -19,5 +19,5 @@ function decreaseCount () {
 
 function deleteItem () {
     let item = document.getElementById("cartContainer");
-    item.classList.add("d-none")
+    item.classList.add("hidden")
 }

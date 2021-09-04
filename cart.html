@@ -1,245 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart page</title>
-    <link rel="icon" href="./img/favicon32.png" type="image/x-icon">
+    <title>cart page</title>
+    
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/4c6530eb2c.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap css link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- tailwind CSS CDN Link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- google fonts links -->
+    <!-- owl carousel css links -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
 </head>
-
 <body id="backtoTop">
-    <!-- navbar starts -->
-    <nav style="background-color: #F3F2EE;" class="body-font" id="navbar">
-        <div class="container">
-            <div class="d-flex p-2 flex-column flex-md-row align-items-center justify-content-between">
-                <div class="d-flex flex-wrap align-items-center font-weight-bold mb-2 mb-md-0 mt-2 mt-lg-0">
-                    <a href="./shopPage.html" style="text-decoration: none; color: #47503A;" target="" class="mr-3">Shop</a>
-                    <a href="./index.html" style="text-decoration: none; color: #47503A;" target="" class="mr-2">About</a>
-                </div>
-                <div class="order-first order-md-0">
-                    <a href="./index.html" style="text-decoration: none;  color: #47503A"
-                    class="d-flex h1 align-items-center justify-content-center mb-0 ml-md-5">
-                    <span class="font-weight-bold header-font">VIPdokan</span>
-                    </a>
-                </div>
-                <div class="d-flex justify-content-lg-right ml-lg-0 mr-2 mr-md-3">
-                    <button
-                        class="inline-flex align-items-center border-0 py-2 px-3 rounded font-weight-bold mt-2 mt-md-0 mr-3 focus-effect" style="color: #47503A;">Login</button>
-                    <a href="#" style="text-decoration: none; color: #47503A" class="d-flex align-items-center justify-content-center mr-3"><i class="fas fa-heart"></i></a>
-                    <a href="" style="text-decoration: none; color: #47503A" class="mt-1 mt-md-0 d-flex align-items-center"><i class="fas fa-shopping-cart"></i> (0)</a>
-                </div>
+      <!-- navbar starts -->
+      <nav class="md:bg-gray-100 body-font">
+        <div class="container mx-auto md:px-14 flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <div class="flex lg:w-2/5 flex-wrap items-center text-lg font-semibold md:ml-auto">
+                <a href="shopPage.html" target="blank" class="mr-5">Shop</a>
+                <a href="index.html" target="" class="mr-5">About</a>
+            </div>
+            <a href="index.html"
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
+                <span class="ml-3 text-4xl font-bold header-font">VIPdokan</span>
+            </a>
+            <div class="lg:w-2/5 flex lg:justify-end lg:ml-0 space-x-2 md:space-x-4">
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded font-semibold text-lg mt-4 md:mt-0">Login</button>
+                <a href="#" class="mt-5 md:mt-1 text-lg"><i class="fas fa-heart"></i></a>
+                <a href="./cart.html" class="mt-4 md:mt-0 flex items-center"><i class="fas fa-shopping-cart"></i> (0)</a>
             </div>
         </div>
     </nav>
     <!-- navbar ends -->
 
-    <h1 class="text-center font-weight-bold mt-5 font-spectral">Cart</h1>
-    <section class="py-4">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-center font-balooDa">
-                <div class="text-center">
-                    <img src="./img/checkoutbasket.png" style="height: 25px;" alt="">
-                    <p class="text-secondary font-weight-bold mt-3">১. কার্ট</p>
-                </div>
-                <div style="width: 100px;" class="border-bottom border-secondary mx-3 mt-md-4 mt-5 "></div>
-                <div class="text-center">
-                    <img src="./img/checkoutWallet.png" class="mt-0" style="height: 25px;" alt="">
-                    <p class="text-secondary font-weight-bold mt-3">২. চেকআউট</p>
-                </div>
-                <div style="width: 100px;" class="border-bottom border-secondary mt-md-4 mt-5 mx-3"></div>
-                <div class="text-center">
-                    <img src="./img/checkoutSurity.png" style="height: 25px;" alt="">
-                    <p class="text-secondary font-weight-bold mt-3">৩. কনফার্ম</p>
-                </div>
+        <!-- navbar starts -->
+        <!-- <nav class="md:bg-gray-100 body-font">
+        <div class="container mx-auto md:px-14 flex flex-wrap p-5 flex-col md:flex-row items-center md:justify-between">
+            <a href="index.html"
+                class="flex order-first title-font font-medium items-center md:items-center md:justify-center mb-4 md:mb-0">
+                <span class="ml-3 text-4xl font-bold header-font">VIPdokan</span>
+            </a>
+            <div class="flex items-center md:justify-end space-x-4">
+                <a href="index.html" target="" class="mt-5 md:mt-1 text-lg font-semibold">About</a>
+                <a href=""
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded font-semibold text-lg mt-4 md:mt-0">Login</a>
+                <a href="#" class="mt-5 md:mt-1 text-lg"><i class="fas fa-heart"></i></a>
+                <a href="./cart.html" class="mt-4 md:mt-0 flex items-center"><i class="fas fa-shopping-cart"></i> (0)</a>
             </div>
         </div>
-    </section>
+        </nav> -->
+        <!-- navbar ends -->
 
-    <main class="pt-xl-3 pb-xl-3">
-        <div id="cartContainer" class="px-3 px-sm-0">
-            <div style="background-color: #F4F8F8;" class="d-flex flex-column rounded py-4 px-xl-5 px-4 flex-xl-row justify-content-xl-between container">
-                <div class="d-flex flex-xl-row flex-column">
-                    <div class="mr-xl-4 text-center mb-5 mb-xl-0">
-                        <img src="./img/cartImage.png" class="" alt="">
-                    </div>
-                    <div class="">
-                        <h4 class="text-color-blue font-weight-bold font-spectral mb-4">Reishi Mushroom </h4>
-                        <div class="d-flex align-items-center">
-                            <p class="text-secondary mb-2 mr-2"><del>1800 tk</del></p>
-                            <h5 class="font-weight-bold">1000 tk</h5>
-                        </div>
-                        <p class="mb-2 mt-xl-2">Product Code: VIPD-0011</p>
-                    </div>
-                </div>
-                <div class="mt-xl-5 mt-3">
-                    <h4 class="font-weight-bold font-spectral">Unit price: 2000.000</h4>
-                    <div class="d-flex justify-content-xl-end justify-content-start mt-3 mt-xl-3">
-                        <button onclick="decreaseCount()" style="background-color: gray; color: white; z-index: 2;" class="btn"><i class="fas fa-minus"></i></button>
-                        <input style="width: 60px; background-color: rgb(236, 236, 236);" class="text-center input-border" type="text" value="1kg" name="" id="countInput">
-                        <button onclick="increaseCount()" style="background-color: gray; color: white;" class="btn"><i class="fas fa-plus"></i></button>
-                        <div class="ml-4">
-                            <button onclick="deleteItem()" style="background-color: rgb(247, 230, 230);" class="btn btn-sm text-danger"><i class="fas fa-trash-alt"></i><br><small class="font-weight-bold">Delete</small></button>
-                        </div>
-                    </div>
-                    
+    <h1 class="text-center text-4xl mt- font-semibold my-10"><span class="font-balooDa">কার্ট</span></h1>
+
+    <div id="cartContainer" class="lg:mx-24 mx-4 md:mx-8 cart-item-bg rounded mb-10">
+        <div class="p-6 flex md:flex-row flex-col justify-between space-y-4 md:space-y-0">
+            <div class="flex md:flex-row flex-col md:space-x-6 space-y-4 md:space-y-0">
+                <img src="./img/cartImage.png" class="" alt="">
+                <div>
+                    <h3 class="text-2xl font-semibold">Reishi Mushroom</h3>
+                    <h5 class="text-md"><del>1800tk</del> <span class="text-xl font-semibold">1000 tk</span></h5>
+                    <p class="text-md">Regular stock</p>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <section class="pt-3 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 pr-3 pl-xl-0">
-                    <div class="col-md-12 px-0">
-                        <p class="font-balooDa">. ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
-                        <p class="font-balooDa">. ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
-                        <p class="font-balooDa">. ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
-                        <p class="font-balooDa">. ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
-                        <p class="font-balooDa">. ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
-                        <div class="">
-                            <div style="background-color: #F4F8F8; border: 1px solid #2C2C2C;" class="d-flex align-items-center justify-content-around rounded px-3 py-2">
-                                <p class="mb-0 font-weight-bold mr-2 mr-xl-0">Promo code:</p>
-                                <input style="width: 58%;" onfocus= "this.style.outline= 'none'" type="text" name="" value="code1122" class="border-0 text-center py-1" id="">
-                                <button style="background-color: #F4F8F8; border: 1px solid #2C2C2C;" class="btn py-1 ml-2 ml-xl-0">Add promo</button>
-                            </div>
-                        </div>
-                    </div>
-                    <button style="background-color: #fff; border: 1px solid #2C2C2C; color: #47503A;" class="btn btn-lg btn-block mt-3 font-weight-bold">Continue Shopping</button>
-                </div>
-                <div class="col-md-6 pl-3 pr-xl-0 mt-3 mt-xl-0">
-                    <div style="background-color: #F4F8F8;" class="col-md-12 py-4 px-4 mb-3 mb-xl-0 rounded">
-                        <div class="d-flex justify-content-between">
-                            <div class="">
-                                <p>Subtotal:</p>
-                                <p>Ready to cook:</p>
-                                <p>Delivery charge:</p>
-                                <p>Promo code:</p>
-                            </div>
-                            <div class="">
-                                <p class="text-right">2000</p>
-                                <p class="text-right">100</p>
-                                <p class="text-right">50</p>
-                                <p class="text-right">code1122 (20% off)</p>
-                            </div>
-                        </div>
-                        <div class="border-bottom border-secondary horizontal-line"></div>
-                        <div class="d-flex justify-content-between">
-                            <p class="font-spectral font-weight-bold mb-1">Grand Total:</p>
-                            <p class="font-spectral font-weight-bold mb-1"><del>2150.00</del> 1720.00</p>
-                        </div>
-                    </div>
-                    <a href="./checkOut.html" style="text-decoration: none;"><button class="btn btn-lg btn-block btn-background text-white mt-3 font-weight-bold">Checkout</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="need-help py-3">
-        <div class="container">
+    
             <div class="">
-                <h1 class="header-font font-weight-bold">Need help?</h1>
-                <h5 class="text-xl font-weight-bold">Visit our <a href="" style="text-decoration: none;" class="text-blue-500">help page</a> or <a href=""
-                style="text-decoration: none;" class="text-blue-500">mail us</a></h5>
+                <h4 class="font-semibold text-2xl">Unit price: 2000.000</h4>
+                <div class="flex xl:justify-end justify-start mt-5">
+                    <button onclick="decreaseCount()" style="background-color: gray; color: white; z-index: 2;" class="px-3 rounded"><i class="fas fa-minus"></i></button>
+                    <input style="width: 60px; background-color: rgb(236, 236, 236);" class="text-center input-border" type="text" value="1kg" name="" id="countInput">
+                    <button onclick="increaseCount()" style="background-color: gray; color: white;" class="px-3 rounded"><i class="fas fa-plus"></i></button>
+                    <div class="ml-4">
+                        <button onclick="deleteItem()" style="background-color: rgb(247, 230, 230);" class="px-3 py-1 text-red-400 rounded"><i class="fas fa-trash-alt"></i><br><small class="font-semibold">Delete</small></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="lg:mx-24 md:mx-10 mx-4 my-6">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+            <div class="">
+                <p class="font-balooDa">ঢাকার বাহিরে ডেলিভারি দেয়া হয় না।</p>
+                <a href="" style="background-color: #fff; border: 1px solid #2C2C2C; color: #47503A;" class="py-3 px-6 block mt-5 text-center rounded font-semibold">Continue Shopping</a>
+           </div>
+           <div class="cart-item-bg p-6 rounded">
+                <div class="flex justify-between mb-3">
+                    <div class="">
+                        <p class="text-lg">Subtotal:</p>
+                        <p class="text-lg">Delivery Charge:</p>
+                        
+                    </div>
+                    <div class="text-right">
+                        <p class="text-lg">1000</p>
+                        <p class="text-lg ">65</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-600"></div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-lg font-semibold">Total:</p>
+                    <p class="text-lg font-semibold">1065</p>
+                </div>
+           </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2 md:gap-y-0">
+            <div></div>
+            <div>
+                <a href="" style="background-color: #47503A; border: 1px solid #2C2C2C; color: white;" class="py-3 px-6 block mt-5 text-center rounded font-semibold">Checkout</a>
+            </div>
+        </div>
+      
+    </section>
+
+    <section class="need-help py-10">
+        <div class="mx-5 md:mx-24">
+            <div class="">
+                <h1 class="header-font font-bold text-4xl">Need help?</h1>
+                <p class="text-xl font-semibold">Visit our <a href="" class="text-blue-500">help page</a> or <a href=""
+                        class="text-blue-500">mail us</a></p>
             </div>
         </div>
     </section>
 
-    <section class="text-center p-3 p-lg-2" style="background-color: white;">
-        <a href="#backtoTop" class="" style="text-decoration: none; font-size: 24px; color: #47503A;">Back to top</a>
+    <section class="bg-white text-center p-3">
+        <a href="#backtoTop" class="text-2xl font-bold">Back to top</a>
     </section>
 
-    <!-- footer section starts -->
-    <section style="background-color: #F3F2EE;" id="footer" class="footer-bg-color container-fluid pt-5 pb-4">
-        <div class="d-flex flex-lg-row flex-column justify-content-between mx-lg-5 mx-2">
-            <div class="flex-fill">
-                <p class="mb-4 font-weight-bold">Online Shopping</p>
-                <div class="d-flex flex-column my-3">
-                    <a href="" class="footer-a-tag">Mushrooms</a>
-                    <a href="" class="footer-a-tag">Perfumes</a>
-                    <a href="" class="footer-a-tag">Honey</a>
-                    <a href="" class="footer-a-tag">Black Seed</a>
+      <!-- footer section starts -->
+      <section class="background-color pt-14 md:px-24 px-5 pb-4">
+        <div class="lg:flex grid grid-cols-1 md:grid-cols-2">
+            <div class="flex-1">
+                <p class="mb-10 font-semibold">Online Shopping</p>
+                <div class="flex flex-col text-sm space-y-2 font-semibold">
+                    <a href="">Mushrooms</a>
+                    <a href="">Perfumes</a>
+                    <a href="">Honey</a>
+                    <a href="">Black Seed</a>
                 </div>
             </div>
 
-            <div class="flex-fill px-lg-4 px-xl-0">
-                <p class="mb-4 font-weight-bold mt-4 mt-lg-0">Useful Links</p>
-                <div class="d-flex flex-column my-3">
-                    <a href="" class="footer-a-tag">Contact Us</a>
-                    <a href="" class="footer-a-tag">FAQ</a>
-                    <a href="" class="footer-a-tag">T&C</a>
-                    <a href="" class="footer-a-tag">Terms of Use</a>
-                    <a href="" class="footer-a-tag">Track Orders</a>
-                    <a href="" class="footer-a-tag">Shipping</a>
-                    <a href="" class="footer-a-tag">Returns</a>
-                    <a href="" class="footer-a-tag">Black Seed</a>
-                    <a href="" class="footer-a-tag">Blog</a>
-                    <a href="" class="footer-a-tag">Privacy Policy</a>
-                    <a href="" class="footer-a-tag">Sitemap</a>
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 md:mt-0">Useful Links</p>
+                <div class="flex flex-col text-sm space-y-2 font-semibold">
+                    <a href="">Contact Us</a>
+                    <a href="">FAQ</a>
+                    <a href="">T&C</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Track Orders</a>
+                    <a href="">Shipping</a>
+                    <a href="">Returns</a>
+                    <a href="">Black Seed</a>
+                    <a href="">Blog</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Sitemap</a>
                 </div>
             </div>
 
-            <div class="flex-fill px-lg-4 px-xl-0">
-                <p class="mb-4 font-weight-bold mt-4 mt-lg-0">Payment Gateway</p>
-                <div class="d-flex">
-                    <a href=""><img src="./img/visa.png" alt=""></a>
-                    <a href=""><img src="./img/masterCard.png" alt=""></a>
-                    <a href=""><img src="./img/dbbl.png" alt=""></a>
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 md:mt-0">Payment Gateway</p>
+                <div class="flex">
+                    <a href=""><img src="./img/image 19.png" alt=""></a>
+                    <a href=""><img src="./img/image 20.png" alt=""></a>
+                    <a href=""><img src="./img/image 21.png" alt=""></a>
                 </div>
-                <div class="d-flex">
-                    <a href=""><img src="./img/bkash.png" alt=""></a>
-                    <a href=""><img src="./img/rocket.png" alt=""></a>
-                    <a href=""><img src="./img/IslamiBank.png" alt=""></a>
+                <div class="flex">
+                    <a href=""><img src="./img/image 11.png" alt=""></a>
+                    <a href=""><img src="./img/image 17.png" alt=""></a>
+                    <a href=""><img src="./img/image 18.png" alt=""></a>
                 </div>
             </div>
 
-            <div class="flex-fill pl-lg-4 pl-xl-0">
-                <p class="mb-4 font-weight-bold mt-4 mt-lg-0">Subscribe</p>
+            <div class="flex-1">
+                <p class="mb-10 font-semibold mt-10 lg:mt-0">Subscribe</p>
 
-                <p class="mb-4 text-sm font-semibold">Our product recommendation you'll love to receive.
+                <p class="mb-5 text-sm font-semibold">Our product recommendation you'll love to receive.
                     <br>
                     No spam, Unsubscribe anytime.
                 </p>
-                <div class="py-1 px-1 pl-1 d-flex inline-flex bg-white rounded">
-                    <input type="text" style="width: 100%;" class="mr-2 px-2 input-border"
-                        placeholder="Your email address">
-                    <a href="" class="btn-background py-1 px-2 text-white footer-a-tag">Subscribe</a>
+                <div class="py-1 px-1 pl-3 flex inline-flex bg-white rounded">
+                    <input type="text" class="border-none md:w-52 mr-2 focus:outline-none" placeholder="Your email address">
+                    <a href="" class="btn-background rounded-sm py-1 px-2 text-white">Subscribe</a>
                 </div>
-                <div class="d-flex align-items-center mt-4">
-                    <img src="./img/Vector.png" class="mr-3" alt="">
-                    <p>100% ORIGINAL guarantee for all <br> products at vipdokan.com</p>
+                <div class="flex space-x-3 mt-5">
+                    <img src="/img/Vector.png" alt="">
+                    <p>100% ORIGINAL guarantee for all products at vipdokan.com</p>
                 </div>
-                <div class="d-flex align-items-center mt-4">
-                    <img src="./img/Vector_1.png" class="mr-3 ml-2" alt="">
-                    <p>Return within 30days of receiving <br> your order</p>
+                <div class="flex space-x-6 mt-5">
+                    <img src="./img/Vector_1.png" alt="">
+                    <p>Return within 30days of receiving your order</p>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">
-            <p class="small font-weight-bold">© 2021 vipdokan.com. All rights reserved.</p>
+        <div class="text-center mt-10">
+            <p class="text-sm font-semibold">© 2021 vipdokan.com. All rights reserved.</p>
         </div>
     </section>
     <!-- footer section ends -->
-
     <script src="./js/cart.js"></script>
 </body>
-
 </html>

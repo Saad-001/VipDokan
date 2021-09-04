@@ -248,6 +248,10 @@ body{
     margin-top: 44px;
 }
 
+.cart-item-bg{
+    background-color: #F4F8F8;
+}
+
 @media screen and (max-width: 640px){
     .card:hover .details-btn{
         top: 350px;
@@ -263,5 +267,11 @@ body{
 @media screen and (max-width: 480px){
     .card:hover .details-btn{
         top: 280px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .login-extra-margin{
+        margin: 0 420px;
     }
 }
